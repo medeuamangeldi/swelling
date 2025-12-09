@@ -15,7 +15,7 @@ export function WhyChooseUs() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           className="text-center max-w-3xl mx-auto mb-16"
           initial="hidden"
           whileInView="visible"
@@ -38,7 +38,7 @@ export function WhyChooseUs() {
         </motion.div>
 
         {/* Features Grid */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           initial="hidden"
           whileInView="visible"
@@ -49,9 +49,7 @@ export function WhyChooseUs() {
             const IconComponent = (Icons as any)[item.icon] || Icons.Check;
             return (
               <motion.div key={item.id} variants={fadeInUp}>
-                <Card
-                  className="group hover:border-spark-600 hover:shadow-lg hover:shadow-spark-600/20 transition-all duration-300 text-center h-full"
-                >
+                <Card className="group hover:border-spark-600 hover:shadow-lg hover:shadow-spark-600/20 transition-all duration-300 text-center h-full">
                   <CardHeader className="items-center pb-4">
                     <div className="p-4 rounded-full bg-spark-600/10 group-hover:bg-spark-600/20 transition-colors mb-4">
                       <IconComponent className="w-8 h-8 text-spark-600" />

@@ -23,7 +23,7 @@ export function MetalsSection() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           className="text-center max-w-3xl mx-auto mb-16"
           initial="hidden"
           whileInView="visible"
@@ -46,7 +46,7 @@ export function MetalsSection() {
         </motion.div>
 
         {/* Metals Grid */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto"
           initial="hidden"
           whileInView="visible"

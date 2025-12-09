@@ -23,7 +23,7 @@ export function ServicesSection() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           className="text-center max-w-3xl mx-auto mb-16"
           initial="hidden"
           whileInView="visible"
@@ -47,7 +47,7 @@ export function ServicesSection() {
         </motion.div>
 
         {/* Services Grid */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
           initial="hidden"
           whileInView="visible"
@@ -60,7 +60,7 @@ export function ServicesSection() {
         </motion.div>
 
         {/* Special Notes */}
-        <motion.div 
+        <motion.div
           className="mt-12 max-w-4xl mx-auto"
           initial="hidden"
           whileInView="visible"
