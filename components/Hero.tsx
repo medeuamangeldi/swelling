@@ -29,13 +29,13 @@ export function Hero() {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 md:pt-20 pb-16 sm:pb-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div
-            className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-spark-600/20 border border-spark-600/50 backdrop-blur-sm mb-6 sm:mb-8"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-spark-600/20 border border-spark-600/50 backdrop-blur-sm mb-6 sm:mb-8 mt-4 sm:mt-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Clock className="w-3 h-3 sm:w-4 sm:h-4 text-spark-600" />
@@ -47,8 +47,8 @@ export function Hero() {
           {/* Main Heading */}
           <motion.h1
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <span className="block">O&S Welding</span>
@@ -137,7 +137,7 @@ export function Hero() {
 
       {/* Scroll Indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
+        className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 1.5 }}
