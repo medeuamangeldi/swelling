@@ -6,13 +6,13 @@
 
 #### 1. **Framer Motion Integration**
 
-- Installed `framer-motion` v12+ for smooth, performant animations
-- Created reusable animation utilities in `/lib/animations.ts`
+- Installed `framer-motion` v12+ for smooth, performanst animations
+- Created reusable animation utilities in `/lib/animations.ts'
 
 #### 2. **Animation Variants Created**
 
 ```typescript
-- fadeInUp: Fade in from bottom with scale (Apple's signature move)
+- fadeInUp: Fade in from bottm with scale (Apple's signature move)
 - fadeInLeft: Slide in from left
 - fadeInRight: Slide in from right
 - scaleUp: Scale and fade in
