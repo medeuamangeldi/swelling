@@ -9,10 +9,11 @@ For a **perfect** professional landing page, you need these images:
 ## ✅ **ESSENTIAL IMAGES (Must Have)**
 
 ### 1. **Hero Background** - PRIORITY #1 ⭐⭐⭐
+
 - **File name**: `hero-welding.jpg`
 - **Size**: 1920x1080px (Full HD)
 - **File size**: Under 500KB (optimize for web)
-- **What to show**: 
+- **What to show**:
   - Dramatic welding sparks flying
   - Worker in action (with helmet/mask)
   - Dark background with bright sparks
@@ -22,6 +23,7 @@ For a **perfect** professional landing page, you need these images:
 - **Current**: Using Unsplash placeholder
 
 **Photography Tips:**
+
 - Shoot in low light to make sparks stand out
 - Use fast shutter speed (1/500s or faster)
 - Get close-ups of the welding arc
@@ -30,7 +32,8 @@ For a **perfect** professional landing page, you need these images:
 ---
 
 ### 2-4. **Video Thumbnails** (3 images) - PRIORITY #2 ⭐⭐
-- **File names**: 
+
+- **File names**:
   - `video-thumb-1.jpg`
   - `video-thumb-2.jpg`
   - `video-thumb-3.jpg`
@@ -45,6 +48,7 @@ For a **perfect** professional landing page, you need these images:
 - **Current**: Using Unsplash placeholders
 
 **Photography Tips:**
+
 - Action shots work best
 - Show before/after or work in progress
 - Include your branding/truck if possible
@@ -53,6 +57,7 @@ For a **perfect** professional landing page, you need these images:
 ---
 
 ### 5. **Social Media Preview (OG Image)** - PRIORITY #3 ⭐
+
 - **File name**: `og-image.jpg`
 - **Size**: 1200x630px (Facebook/LinkedIn standard)
 - **File size**: Under 300KB
@@ -66,6 +71,7 @@ For a **perfect** professional landing page, you need these images:
 - **Current**: Using placeholder path (not critical for launch)
 
 **Design Tips:**
+
 - Use Canva (free) to create this
 - Keep text large and readable
 - Use your brand colors (dark + orange)
@@ -76,6 +82,7 @@ For a **perfect** professional landing page, you need these images:
 ## 🎨 **RECOMMENDED ADDITIONS (For Premium Look)**
 
 ### 6. **Company Logo**
+
 - **File name**: `logo.png` or `logo.svg`
 - **Size**: 500x500px (square) or any size for SVG
 - **Transparent background**: YES
@@ -86,7 +93,9 @@ For a **perfect** professional landing page, you need these images:
 ---
 
 ### 7-12. **Service Showcase Gallery** (6+ images)
+
 If you want to add a "Our Projects" section later:
+
 - **File names**: `project-1.jpg` through `project-6.jpg`
 - **Size**: 800x600px
 - **What to show**:
@@ -101,6 +110,7 @@ If you want to add a "Our Projects" section later:
 ---
 
 ### 13-16. **Team/About Photos** (Optional)
+
 - Team members at work
 - Your workshop/facility
 - Equipment and tools
@@ -112,6 +122,7 @@ If you want to add a "Our Projects" section later:
 ## 📁 **File Structure**
 
 Place all images in this folder:
+
 ```
 /public/images/
 ├── hero-welding.jpg          ← MUST HAVE
@@ -128,6 +139,7 @@ Place all images in this folder:
 ## 🔧 **How to Replace Images**
 
 ### Step 1: Add Your Images
+
 1. Take/collect your photos
 2. Optimize them (use tinypng.com or squoosh.app)
 3. Rename them exactly as shown above
@@ -137,16 +149,18 @@ Place all images in this folder:
 
 **For Hero Background:**
 Edit `/components/Hero.tsx` (line 14):
+
 ```typescript
 // Change from:
-src="https://images.unsplash.com/photo-..."
+src = "https://images.unsplash.com/photo-...";
 
 // To:
-src="/images/hero-welding.jpg"
+src = "/images/hero-welding.jpg";
 ```
 
 **For Video Thumbnails:**
 Edit `/lib/data.ts` (lines 160-172):
+
 ```typescript
 export const VIDEO_SHOWCASE: VideoShowcase[] = [
   {
@@ -160,6 +174,7 @@ export const VIDEO_SHOWCASE: VideoShowcase[] = [
 ```
 
 ### Step 3: Test
+
 ```bash
 # Restart dev server
 npm run dev
@@ -173,12 +188,14 @@ npm run dev
 ### What to Photograph:
 
 **Welding Action Shots:**
+
 - [ ] MIG welding close-up with sparks
 - [ ] TIG welding precision work
 - [ ] Stick welding on heavy metal
 - [ ] Plasma cutting in action
 
 **Completed Projects:**
+
 - [ ] Custom fabrication pieces
 - [ ] Structural repairs
 - [ ] Truck/trailer work
@@ -186,11 +203,13 @@ npm run dev
 - [ ] HVAC installations
 
 **On-Site Work:**
+
 - [ ] Mobile welding truck
 - [ ] Team working at job site
 - [ ] Equipment setup
 
 **Workshop:**
+
 - [ ] Clean, professional workspace
 - [ ] Tools and equipment
 - [ ] Quality control process
@@ -200,6 +219,7 @@ npm run dev
 ## 💡 **Pro Tips**
 
 ### Image Optimization:
+
 1. **Compress before upload**: Use [TinyPNG.com](https://tinypng.com) or [Squoosh.app](https://squoosh.app)
 2. **Target file sizes**:
    - Hero: Under 500KB
@@ -208,6 +228,7 @@ npm run dev
 3. **Use JPEG** for photos (not PNG unless you need transparency)
 
 ### Photography Tips:
+
 - **Lighting**: Natural light or professional lighting
 - **Focus**: Sharp, crisp images
 - **Composition**: Rule of thirds
@@ -216,17 +237,21 @@ npm run dev
 - **Safety**: Always show proper safety gear
 
 ### If You Don't Have Photos Yet:
+
 **Option 1: Use Stock Photos** (temporary)
+
 - Search "welding" on [Unsplash.com](https://unsplash.com) or [Pexels.com](https://pexels.com)
 - Free, high-quality images
 - Replace with your own photos later
 
 **Option 2: Hire a Photographer**
+
 - Professional photos: $200-500 for a few hours
 - Will pay for itself in credibility
 - Can use photos for years
 
 **Option 3: Use iPhone/Smartphone**
+
 - Modern phones take great photos
 - Clean the lens first!
 - Use HDR mode
@@ -238,18 +263,21 @@ npm run dev
 ## ⚡ **Quick Answer:**
 
 ### **Bare Minimum to Launch: 4 Images**
+
 1. Hero background
 2. Video thumbnail 1
 3. Video thumbnail 2
 4. Video thumbnail 3
 
 ### **Professional Standard: 5-6 Images**
+
 1. Hero background
-2-4. Video thumbnails (3)
-5. OG social media image
-6. Company logo
+   2-4. Video thumbnails (3)
+2. OG social media image
+3. Company logo
 
 ### **Premium/Future: 10-20+ Images**
+
 - All above PLUS
 - Project gallery (6-12 images)
 - Team photos (2-4 images)
@@ -260,13 +288,16 @@ npm run dev
 ## 🎯 **Current Status**
 
 **Using now:**
+
 - ✅ Unsplash placeholders (working, but generic)
 
 **Need to replace:**
+
 - ⚠️ Hero background with YOUR welding work
 - ⚠️ 3 video thumbnails with YOUR projects
 
 **Optional but recommended:**
+
 - 📋 OG image for social sharing
 - 📋 Company logo
 
@@ -274,19 +305,23 @@ npm run dev
 
 ## 📅 **Recommended Timeline**
 
-**Week 1:** 
+**Week 1:**
+
 - Get hero background photo
 - Launch with just this + placeholders
 
 **Week 2:**
+
 - Get 3 video thumbnails
 - Replace placeholders
 
 **Week 3:**
+
 - Create OG image
 - Design logo (if needed)
 
 **Month 2:**
+
 - Build project gallery
 - Add team photos
 
@@ -295,6 +330,7 @@ npm run dev
 ## ✅ **Quality Checklist**
 
 Before adding any image:
+
 - [ ] Is it in focus and sharp?
 - [ ] Is the lighting good?
 - [ ] Does it represent your quality standards?
@@ -308,12 +344,14 @@ Before adding any image:
 ## 🚀 **Bottom Line**
 
 **YOU CAN LAUNCH WITH CURRENT PLACEHOLDERS**, but:
+
 - Plan to replace within 2-4 weeks
 - Real photos build trust and credibility
 - Your actual work will always look better than stock photos
 - Aim for **4-6 professional images minimum**
 
-**Investment:** 
+**Investment:**
+
 - DIY with phone: $0 (just your time)
 - Professional photos: $200-500
 - **ROI:** Priceless (builds trust, credibility, drives conversions)

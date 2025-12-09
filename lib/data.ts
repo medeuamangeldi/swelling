@@ -245,22 +245,19 @@ export const VIDEO_SHOWCASE: VideoShowcase[] = [
     id: "video-1",
     title: "Precision Welding Work",
     url: "https://www.pinterest.com/pin/57772807715335199/",
-    thumbnail:
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop",
+    thumbnail: "/images/video-thumb-1.jpg",
   },
   {
     id: "video-2",
     title: "Custom Fabrication Project",
     url: "https://www.pinterest.com/pin/18999629674733011/",
-    thumbnail:
-      "https://images.unsplash.com/photo-1587132116726-e2c5e9f25b06?q=80&w=800&auto=format&fit=crop",
+    thumbnail: "/images/video-thumb-2.jpg",
   },
   {
     id: "video-3",
     title: "Mobile Welding Service",
     url: "https://www.pinterest.com/pin/18999629674733011/",
-    thumbnail:
-      "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=800&auto=format&fit=crop",
+    thumbnail: "/images/video-thumb-3.jpg",
   },
 ];
 
