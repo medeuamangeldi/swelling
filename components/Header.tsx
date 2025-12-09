@@ -21,7 +21,7 @@ export function Header() {
     { href: "#services", label: "Services" },
     { href: "#metals", label: "Metals" },
     { href: "#why-choose-us", label: "Why Us" },
-    { href: "#portfolio", label: "Portfolio" },
+    { href: "#process", label: "Process" },
     { href: "#contact", label: "Contact" },
   ];
 

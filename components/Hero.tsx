@@ -17,34 +17,36 @@ export function Hero() {
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
         <Image
-          src="/images/hero-welding.jpg"
+          src="/images/hero-welding.webp"
           alt="Professional welding services"
           fill
-          className="object-cover brightness-[0.3]"
+          className="object-cover object-center brightness-[0.3]"
+          style={{ objectPosition: "center center" }}
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-steel-950/80 via-steel-950/60 to-steel-950" />
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-spark-600/20 border border-spark-600/50 backdrop-blur-sm mb-8"
+            className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-spark-600/20 border border-spark-600/50 backdrop-blur-sm mb-6 sm:mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Clock className="w-4 h-4 text-spark-600" />
-            <span className="text-sm font-medium text-white">
+            <Clock className="w-3 h-3 sm:w-4 sm:h-4 text-spark-600" />
+            <span className="text-xs sm:text-sm font-medium text-white">
               Same-Day Mobile Welding Available
             </span>
           </motion.div>
 
           {/* Main Heading */}
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -54,7 +56,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl text-steel-200 mb-8 max-w-3xl mx-auto"
+            className="text-lg sm:text-xl md:text-2xl text-steel-200 mb-6 sm:mb-8 max-w-3xl mx-auto px-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -64,7 +66,7 @@ export function Hero() {
           </motion.p>
 
           <motion.p
-            className="text-lg text-steel-300 mb-12 max-w-2xl mx-auto"
+            className="text-base sm:text-lg text-steel-300 mb-8 sm:mb-12 max-w-2xl mx-auto px-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -76,14 +78,14 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
           >
             <Button
               size="xl"
-              className="w-full sm:w-auto spark-glow font-semibold"
+              className="w-full sm:w-auto spark-glow font-semibold text-sm sm:text-base"
               onClick={() =>
                 (window.location.href = `tel:${CONTACT_INFO.phones.ory}`)
               }
@@ -94,21 +96,21 @@ export function Hero() {
             <Button
               size="xl"
               variant="outline"
-              className="w-full sm:w-auto font-semibold"
+              className="w-full sm:w-auto font-semibold text-sm sm:text-base"
               onClick={() =>
                 document
                   .getElementById("contact")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              <Mail className="w-5 h-5 mr-2" />
+              <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Get a Free Quote
             </Button>
           </motion.div>
 
           {/* Quick Info */}
           <motion.div
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}

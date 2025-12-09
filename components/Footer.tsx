@@ -2,18 +2,17 @@
 
 import { CONTACT_INFO } from "@/lib/data";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import Link from "next/link";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-steel-900 border-t border-steel-700">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">
+            <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">
               {CONTACT_INFO.companyName}
             </h3>
             <p className="text-steel-300 text-sm mb-4">
@@ -25,7 +24,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">
+            <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -55,10 +54,10 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#portfolio"
+                  href="#process"
                   className="text-steel-300 hover:text-spark-600 transition-colors text-sm"
                 >
-                  Portfolio
+                  Process
                 </a>
               </li>
               <li>
@@ -74,7 +73,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">
+            <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">
               Featured Services
             </h4>
             <ul className="space-y-2 text-sm text-steel-300">
@@ -89,10 +88,12 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
+            <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">
+              Contact
+            </h4>
             <ul className="space-y-3">
               <li className="flex items-start text-sm">
-                <Phone className="w-4 h-4 mr-2 text-spark-600 mt-0.5 flex-shrink-0" />
+                <Phone className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-spark-600 mt-0.5 flex-shrink-0" />
                 <div>
                   <a
                     href={`tel:${CONTACT_INFO.phones.ory}`}
@@ -109,7 +110,7 @@ export function Footer() {
                 </div>
               </li>
               <li className="flex items-start text-sm">
-                <Mail className="w-4 h-4 mr-2 text-spark-600 mt-0.5 flex-shrink-0" />
+                <Mail className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-spark-600 mt-0.5 flex-shrink-0" />
                 <a
                   href={`mailto:${CONTACT_INFO.email}`}
                   className="text-steel-300 hover:text-spark-600 transition-colors"
@@ -118,13 +119,13 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-start text-sm">
-                <MapPin className="w-4 h-4 mr-2 text-spark-600 mt-0.5 flex-shrink-0" />
+                <MapPin className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-spark-600 mt-0.5 flex-shrink-0" />
                 <span className="text-steel-300">
                   {CONTACT_INFO.address.full}
                 </span>
               </li>
               <li className="flex items-start text-sm">
-                <Clock className="w-4 h-4 mr-2 text-spark-600 mt-0.5 flex-shrink-0" />
+                <Clock className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-spark-600 mt-0.5 flex-shrink-0" />
                 <span className="text-steel-300">{CONTACT_INFO.hours}</span>
               </li>
             </ul>
@@ -132,8 +133,8 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-steel-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-steel-800 pt-6 sm:pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
             <p className="text-steel-400 text-sm text-center md:text-left">
               © {currentYear} {CONTACT_INFO.companyName}. All rights reserved.
             </p>
@@ -148,7 +149,7 @@ export function Footer() {
         </div>
 
         {/* SEO Rich Text */}
-        <div className="mt-8 pt-8 border-t border-steel-800">
+        <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-steel-800">
           <div className="text-steel-500 text-xs leading-relaxed">
             <p className="mb-2">
               <strong className="text-steel-400">

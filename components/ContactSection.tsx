@@ -36,17 +36,17 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-steel-950">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 bg-steel-950">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-spark-600/10 border border-spark-600/30 mb-6">
-            <Mail className="w-4 h-4 text-spark-600" />
-            <span className="text-sm font-medium text-spark-600">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-spark-600/10 border border-spark-600/30 mb-4 sm:mb-6">
+            <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-spark-600" />
+            <span className="text-xs sm:text-sm font-medium text-spark-600">
               Contact Us
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 px-4">
             Get Your Free Quote Today
           </h2>
           <p className="text-lg text-steel-300">

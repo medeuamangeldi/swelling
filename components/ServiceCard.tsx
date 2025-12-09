@@ -9,7 +9,6 @@ import {
   CardTitle,
 } from "./ui/card";
 import * as Icons from "lucide-react";
-import { LucideIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/lib/animations";
 
@@ -21,8 +20,8 @@ export function ServiceCard({ service }: ServiceCardProps) {
   const IconComponent = (Icons as any)[service.icon] || Icons.Wrench;
 
   return (
-    <motion.div variants={fadeInUp}>
-      <Card className="group hover:border-spark-600 hover:shadow-lg hover:shadow-spark-600/20 transition-all duration-300 h-full">
+    <motion.div variants={fadeInUp} className="h-full">
+      <Card className="group hover:border-spark-600 hover:shadow-lg hover:shadow-spark-600/20 transition-all duration-300 h-full bg-steel-900">
         <CardHeader>
           <div className="flex items-start justify-between">
             <div className="p-3 rounded-lg bg-spark-600/10 group-hover:bg-spark-600/20 transition-colors">

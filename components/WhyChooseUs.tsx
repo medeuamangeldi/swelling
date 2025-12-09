@@ -11,27 +11,27 @@ export function WhyChooseUs() {
   return (
     <section
       id="why-choose-us"
-      className="py-20 bg-gradient-to-b from-steel-900 to-steel-950"
+      className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-steel-900 to-steel-950"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-12 sm:mb-16"
           initial="hidden"
           whileInView="visible"
           viewport={viewport}
           variants={fadeInUp}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-spark-600/10 border border-spark-600/30 mb-6">
-            <Award className="w-4 h-4 text-spark-600" />
-            <span className="text-sm font-medium text-spark-600">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-spark-600/10 border border-spark-600/30 mb-4 sm:mb-6">
+            <Award className="w-3 h-3 sm:w-4 sm:h-4 text-spark-600" />
+            <span className="text-xs sm:text-sm font-medium text-spark-600">
               Why Choose Us
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 px-4">
             Your Trusted Welding Partner
           </h2>
-          <p className="text-lg text-steel-300">
+          <p className="text-base sm:text-lg text-steel-300 px-4">
             With decades of combined experience and state-of-the-art equipment,
             we deliver excellence on every project.
           </p>

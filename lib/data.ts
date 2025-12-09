@@ -1,5 +1,3 @@
-import { LucideIcon } from "lucide-react";
-
 export interface Service {
   id: string;
   title: string;
@@ -243,21 +241,21 @@ export const METALS: Metal[] = [
 export const VIDEO_SHOWCASE: VideoShowcase[] = [
   {
     id: "video-1",
-    title: "Precision Welding Work",
-    url: "https://www.pinterest.com/pin/57772807715335199/",
-    thumbnail: "/images/video-thumb-1.jpg",
+    title: "Precision TIG Welding Process",
+    url: "/videos/video-1.mp4",
+    thumbnail: "/images/video-thumb-1.webp",
   },
   {
     id: "video-2",
-    title: "Custom Fabrication Project",
-    url: "https://www.pinterest.com/pin/18999629674733011/",
-    thumbnail: "/images/video-thumb-2.jpg",
+    title: "Structural Steel Fabrication",
+    url: "/videos/video-2.mp4",
+    thumbnail: "/images/video-thumb-2.webp",
   },
   {
     id: "video-3",
-    title: "Mobile Welding Service",
-    url: "https://www.pinterest.com/pin/18999629674733011/",
-    thumbnail: "/images/video-thumb-3.jpg",
+    title: "Custom Metal Work Process",
+    url: "/videos/video-3.mp4",
+    thumbnail: "/images/video-thumb-3.webp",
   },
 ];
 

@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/og-image.webp",
         width: 1200,
         height: 630,
         alt: "O&S Welding Fabrication - Professional Welding Services",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
       "O&S Welding Fabrication LLC | Professional Welding Services Chicago",
     description:
       "Licensed & insured welding services. MIG, TIG, Stick welding, mobile services, custom fabrication.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/og-image.webp"],
   },
   robots: {
     index: true,

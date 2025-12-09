@@ -100,13 +100,13 @@ export const parallaxConfig = {
 // Viewport settings for scroll animations
 export const viewport = {
   once: true, // Only animate once
-  amount: 0.3, // Trigger when 30% visible
-  margin: "0px 0px -100px 0px", // Trigger slightly before entering viewport
+  amount: 0.2, // Trigger when 20% visible (better for mobile)
+  margin: "0px 0px -50px 0px", // Trigger slightly before entering viewport
 };
 
 // Alternative viewport for earlier trigger
 export const viewportEarly = {
   once: true,
-  amount: 0.1,
-  margin: "0px 0px -200px 0px",
+  amount: 0.05, // More sensitive for mobile
+  margin: "0px 0px -100px 0px",
 };
