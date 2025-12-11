@@ -120,14 +120,6 @@ export const SERVICES: Service[] = [
     features: ["Building repair", "Reinforcement", "Code compliant"],
   },
   {
-    id: "hvac-support",
-    title: "HVAC Roof Support",
-    description:
-      "Professional installation and repair of HVAC roof supports and mounting systems.",
-    icon: "Wind",
-    features: ["Installation", "Repair", "Maintenance"],
-  },
-  {
     id: "truck-trailer",
     title: "Truck & Trailer Services",
     description:

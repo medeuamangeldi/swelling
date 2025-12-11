@@ -166,12 +166,12 @@ export function Footer() {
               Our expert team works with mild steel, stainless steel, galvanized
               steel, aluminum, cast steel, and various alloys. We provide
               services for residential, commercial, and industrial clients
-              including HVAC roof support installation, truck and trailer
-              repair, heavy equipment repair, gate and fence repair, commercial
-              gas line repair, and demolition work. We work with general
-              contractors, follow architectural and engineering drawings, create
-              AutoCAD designs, and handle high-volume manufacturing orders.
-              Same-day emergency service available.
+              including truck and trailer repair, heavy equipment repair, gate
+              and fence repair, commercial gas line repair, and demolition work.
+              We work with general contractors, follow architectural and
+              engineering drawings, create AutoCAD designs, and handle
+              high-volume manufacturing orders. Same-day emergency service
+              available.
             </p>
           </div>
         </div>
