@@ -117,7 +117,7 @@ export function Hero() {
           >
             <div className="glass-effect rounded-lg p-4">
               <div className="text-spark-600 font-bold text-2xl mb-1">10+</div>
-              <div className="text-steel-300 text-sm">Welding Processes</div>
+              <div className="text-steel-300 text-sm">Years Experience</div>
             </div>
             <div className="glass-effect rounded-lg p-4">
               <div className="text-spark-600 font-bold text-2xl mb-1">

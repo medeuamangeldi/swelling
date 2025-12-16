@@ -19,9 +19,10 @@ export function Header() {
 
   const navLinks = [
     { href: "#services", label: "Services" },
-    { href: "#metals", label: "Metals" },
-    { href: "#why-choose-us", label: "Why Us" },
+    { href: "#portfolio", label: "Portfolio" },
     { href: "#process", label: "Process" },
+    { href: "#why-choose-us", label: "Why Us" },
+    { href: "#metals", label: "Metals" },
     { href: "#contact", label: "Contact" },
   ];
 
