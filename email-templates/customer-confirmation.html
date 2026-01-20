@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O&S Welding - Request Received</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+    "
+  >
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px">
+      <div
+        style="
+          background-color: #ffffff;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <!-- Header -->
+        <div
+          style="
+            background-color: #1e293b;
+            padding: 30px 20px;
+            text-align: center;
+          "
+        >
+          <h1
+            style="
+              margin: 0;
+              color: #ffffff;
+              font-size: 24px;
+              font-weight: bold;
+            "
+          >
+            O&S Welding Fabrication LLC
+          </h1>
+          <p
+            style="
+              margin: 8px 0 0 0;
+              color: #fb923c;
+              font-size: 12px;
+              font-weight: 600;
+              text-transform: uppercase;
+            "
+          >
+            Professional Welding Services
+          </p>
+        </div>
+
+        <!-- Content -->
+        <div style="padding: 30px 20px">
+          <div style="text-align: center; margin-bottom: 20px">
+            <span
+              style="
+                display: inline-block;
+                background-color: #dcfce7;
+                color: #166534;
+                padding: 8px 16px;
+                border-radius: 20px;
+                font-size: 13px;
+                font-weight: 600;
+              "
+              >✓ Request Received</span
+            >
+          </div>
+
+          <h2 style="margin: 0 0 16px 0; color: #1e293b; font-size: 20px">
+            Hello {{customer_name}},
+          </h2>
+
+          <p
+            style="
+              margin: 0 0 20px 0;
+              color: #475569;
+              font-size: 15px;
+              line-height: 1.6;
+            "
+          >
+            Thank you for reaching out to
+            <strong>O&S Welding Fabrication LLC</strong>. Your request has been
+            received, and our team is reviewing it.
+          </p>
+
+          <!-- CTA Box -->
+          <div
+            style="
+              background-color: #fb923c;
+              padding: 20px;
+              border-radius: 6px;
+              margin: 20px 0;
+              text-align: center;
+            "
+          >
+            <p
+              style="
+                margin: 0;
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 1.5;
+              "
+            >
+              📞 We'll contact you within the next couple of hours to discuss
+              your project.
+            </p>
+          </div>
+
+          <!-- Info Box -->
+          <div
+            style="
+              background-color: #f8fafc;
+              padding: 16px;
+              border-radius: 6px;
+              border: 1px solid #e2e8f0;
+              margin: 20px 0;
+            "
+          >
+            <p
+              style="
+                margin: 0 0 8px 0;
+                color: #1e293b;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+              "
+            >
+              Your Contact Info
+            </p>
+            <p style="margin: 6px 0; color: #475569; font-size: 14px">
+              ✉️ {{customer_email}}
+            </p>
+            <p style="margin: 6px 0; color: #475569; font-size: 14px">
+              📱 {{customer_phone}}
+            </p>
+            <p style="margin: 6px 0; color: #475569; font-size: 14px">
+              💬 {{message}}
+            </p>
+          </div>
+
+          <p style="margin: 20px 0 0 0; color: #475569; font-size: 15px">
+            We look forward to working with you!
+          </p>
+
+          <p style="margin: 16px 0 0 0; color: #64748b; font-size: 14px">
+            Best regards,<br />
+            <strong style="color: #1e293b">O&S Welding Fabrication LLC</strong>
+          </p>
+        </div>
+
+        <!-- Footer -->
+        <div
+          style="background-color: #1e293b; padding: 20px; text-align: center"
+        >
+          <div style="margin-bottom: 12px">
+            <a
+              href="tel:{{company_phone}}"
+              style="
+                color: #fb923c;
+                text-decoration: none;
+                font-size: 13px;
+                margin: 0 8px;
+              "
+              >📞 {{company_phone}}</a
+            >
+            <span style="color: #475569">|</span>
+            <a
+              href="mailto:{{company_email}}"
+              style="
+                color: #fb923c;
+                text-decoration: none;
+                font-size: 13px;
+                margin: 0 8px;
+              "
+              >✉️ {{company_email}}</a
+            >
+          </div>
+          <p style="margin: 0; color: #94a3b8; font-size: 11px">
+            © 2026 O&S Welding Fabrication LLC. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

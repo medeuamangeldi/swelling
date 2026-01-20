@@ -23,16 +23,41 @@ export function ContactSection() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus("idle");
 
-    // Simulate form submission (frontend only)
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", phone: "", message: "" });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+
+        // Reset status after 5 seconds
+        setTimeout(() => setSubmitStatus("idle"), 5000);
+      } else {
+        setSubmitStatus("error");
+        console.error("Error:", data.error);
+
+        // Reset status after 5 seconds
+        setTimeout(() => setSubmitStatus("idle"), 5000);
+      }
+    } catch (error) {
+      setSubmitStatus("error");
+      console.error("Failed to submit form:", error);
 
       // Reset status after 5 seconds
       setTimeout(() => setSubmitStatus("idle"), 5000);
-    }, 1000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -237,7 +262,15 @@ export function ContactSection() {
 
                   {submitStatus === "success" && (
                     <div className="p-4 rounded-lg bg-green-600/20 border border-green-600/50 text-green-400 text-sm">
-                      Thank you! We&apos;ll get back to you shortly.
+                      ✓ Thank you! Your message has been sent. We&apos;ll
+                      contact you within the next couple of hours.
+                    </div>
+                  )}
+
+                  {submitStatus === "error" && (
+                    <div className="p-4 rounded-lg bg-red-600/20 border border-red-600/50 text-red-400 text-sm">
+                      Failed to send message. Please try again or contact us
+                      directly at 773-815-2391.
                     </div>
                   )}
 
